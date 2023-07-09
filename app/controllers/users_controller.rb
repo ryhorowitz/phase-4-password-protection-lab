@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   def show
     user = User.find(session[:user_id])
-
+    # dumb comment
     render json: user, status: :ok
   end
 
